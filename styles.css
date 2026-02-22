@@ -201,7 +201,7 @@ img { max-width: 100%; height: auto; display: block; }
   position: relative;
   z-index: 1;
 }
-.countdown-item { display: flex; flex-direction: column; align-items: center; width: 50px; }
+.countdown-item { display: flex; flex-direction: column; align-items: center; width: 50px; gap: 5px}
 .countdown-num {
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum" 1;
@@ -210,7 +210,7 @@ img { max-width: 100%; height: auto; display: block; }
   min-width: 50px;
   text-align: center;
 }
-.countdown-label { font-size: 1.3rem; }
+.countdown-label { font-size: 1.2rem; }
 #days {
   width: 4ch;          /* например под 0..9999 (4 знака) */
 }
@@ -359,10 +359,10 @@ img { max-width: 100%; height: auto; display: block; }
   padding-left: 1rem;
   border-left: 1px solid rgba(44,44,44,0.9);
 }
-.timeline-item { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+.timeline-item { display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: center; }
 .timeline-time { font-size: 1.1rem; font-weight: 700; min-width: 3rem; flex-shrink: 0; }
-.timeline-content { display: flex; gap: 0.75rem; align-items: flex-start; }
-.timeline-icon { font-size: 1.25rem; flex-shrink: 0; max-width: 30px;}
+.timeline-content { display: flex; gap: 0.75rem; align-items: center; }
+.timeline-icon { font-size: 1.25rem; flex-shrink: 0; max-width: 40px;}
 .timeline-title { font-size: 2.3rem; font-style: italic; }
 .timeline-line { display: block; width: 60px; height: 1px; background: var(--color-text); margin: 0.25rem 0; }
 .timeline-desc { font-size: 1.1rem; }
@@ -436,7 +436,7 @@ img { max-width: 100%; height: auto; display: block; }
 .wishes-slider { position: relative; min-height: 80px; flex: 1; }
 .wish-slide { display: none; }
 .wish-slide.active { display: block; }
-.wish-text { font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem; }
+.wish-text { font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem; text-align: justify; }
 .wishes-nav {
   display: flex;
   align-items: center;
