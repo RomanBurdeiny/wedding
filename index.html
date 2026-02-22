@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Роман & Анна — Свадьба</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+
+    <!-- 1. Hero -->
+    <section id="hero" class="section section-hero">
+      <div class="container">
+        <h1 class="hero-title-sans">THE WEDDING DAY</h1>
+        <div class="hero-separator"></div>
+        <h2 class="hero-names">Роман & Анна</h2>
+
+        <div class="hero-image-wrap">
+          <img
+            src="assets/IMG_3226 (2).JPG"
+            alt="Роман и Анна"
+            class="hero-image"
+          >
+        </div>
+
+        <p class="hero-date">25.07.2026 | 15:00</p>
+      </div>
+    </section>
+
+    <!-- 2. Invitation -->
+    <section id="invitation" class="section section-invitation">
+      <div class="container invitation-layout">
+        <div class="invitation-image-wrap">
+          <img
+            src="assets/IMG_5962.JPG"
+            alt="Руки"
+            class="invitation-image"
+          >
+          <span class="vertical-script">To the moon and back</span>
+        </div>
+
+        <div class="invitation-content">
+          <h2 class="invitation-title">
+            <span class="script">Мы</span>
+            <span class="sans">ОФИЦИАЛЬНО<br>СТАНЕМ СЕМЬЕЙ</span>
+          </h2>
+
+          <p class="invitation-text">
+            Если вы сейчас читаете этот текст, значит совсем скоро вы увидите одного из нас в свадебном платье и думаем, что вы догадываетесь, кого именно...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Countdown -->
+    <section id="countdown" class="section section-countdown">
+      <div class="container">
+        <h2 class="countdown-title">ДО НАШЕЙ СВАДЬБЫ ОСТАЛОСЬ</h2>
+
+        <div class="countdown-paper">
+          <div class="countdown-values">
+            <div class="countdown-item">
+              <span class="countdown-num" id="days">0</span>
+              <span class="countdown-label script">Дней</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-num" id="hours">00</span>
+              <span class="countdown-label script">Часов</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-num" id="minutes">00</span>
+              <span class="countdown-label script">Минут</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-num" id="seconds">00</span>
+              <span class="countdown-label script">Секунд</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Calendar -->
+    <section id="calendar" class="section section-calendar">
+      <div class="calendar-frames"></div>
+
+      <div class="container calendar-container">
+        <h2 class="section-heading">
+          <span class="sans">МЫ ЖДЁМ</span>
+          <span class="script script-large">Вас</span>
+        </h2>
+
+        <div class="calendar-wrap">
+          <p class="calendar-month script">Июль</p>
+          <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+
+        <div class="calendar-date-row" aria-label="Дата свадьбы">
+          <span class="calendar-date-part">25</span>
+          <span class="calendar-date-part">07</span>
+          <span class="calendar-date-part">26</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 6. Location + Venue -->
+    <section id="location" class="section section-location">
+      <div class="container">
+        <h2 class="section-heading script">Локация</h2>
+        <p class="location-subtitle">НАША СВАДЬБА ПРОЙДЁТ В</p>
+
+        <div class="location-gallery">
+          <img
+            src="assets/eden22.jpg"
+            alt="Банкет"
+            class="location-img-side"
+          >
+          <img
+            src="assets/eden222.jpg"
+            alt="Локация"
+            class="location-img-center"
+          >
+          <img
+            src="assets/eden33.jpg"
+            alt="Церемония"
+            class="location-img-side"
+          >
+        </div>
+
+        <h2 class="venue-name">«EDEN»</h2>
+        <p class="venue-address">Адрес: агрогородок Сеница, Набережная ул., 1</p>
+
+        <a
+          href="https://yandex.by/maps/-/CPUVuL3Y"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-directions"
+        >
+          Как добраться
+        </a>
+      </div>
+    </section>
+
+    <!-- 7. Timing -->
+    <section id="timing" class="section section-timing">
+      <div class="container">
+        <h2 class="section-heading">
+          <span class="sans">ТАЙМИНГ</span>
+          <span class="script script-accent">Дня</span>
+        </h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-time">15:00</span>
+            <div class="timeline-content">
+              <img class="timeline-icon" src="assets/flag.png" title="метка">
+              <div>
+                <p class="timeline-title script">We Meet</p>
+                <span class="timeline-line"></span>
+                <p class="timeline-desc">Сбор гостей</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-time">16:00</span>
+            <div class="timeline-content">
+              <img class="timeline-icon" src="assets/rings.png" title="свадебные кольца иконки">
+              <div>
+                <p class="timeline-title script">We Do</p>
+                <span class="timeline-line"></span>
+                <p class="timeline-desc">Церемония регистрации</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-time">17:00</span>
+            <div class="timeline-content">
+              <img class="timeline-icon" src="assets/plate.png" title="тарелки">
+              <div>
+                <p class="timeline-title script">We Party</p>
+                <span class="timeline-line"></span>
+                <p class="timeline-desc">Начало банкета</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-time">23:00</span>
+            <div class="timeline-content">
+               <img class="timeline-icon" src="assets/firework.png" title="салют">
+              <div>
+                <p class="timeline-title script">The End</p>
+                <span class="timeline-line"></span>
+                <p class="timeline-desc">Завершение вечера</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Dress Code -->
+    <section id="dresscode" class="section section-dresscode">
+      <div class="container">
+        <h2 class="section-heading sans">DRESS CODE</h2>
+
+        <p class="dresscode-text">
+          Мы очень ждём и готовимся к нашему незабываемому дню!
+          Поддержите нас Вашими улыбками и объятиями, а также красивыми нарядами в палитре мероприятия
+        </p>
+
+        <div class="color-palette">
+          <img class="color-swatch" src="assets/colors/IMG_6033.JPG" alt="">
+          <img class="color-swatch" src="assets/colors/IMG_6036.JPG" alt="">
+          <img class="color-swatch" src="assets/colors/IMG_6037.JPG" alt="">
+          <img class="color-swatch" src="assets/colors/IMG_6038.JPG" alt="">
+          <img class="color-swatch" src="assets/colors/IMG_6039.JPG" alt="">
+          <img class="color-swatch" src="assets/colors/IMG_6040.JPG" alt="">
+          <img class="color-swatch" src="assets/colors/IMG_6042.PNG" alt="">
+          <img class="color-swatch" src="assets/colors/IMG_6041.PNG" alt="">
+        </div>
+
+        <div class="dresscode-columns">
+          <div class="dresscode-col">
+            <h3 class="dresscode-subtitle">Для девушек</h3>
+
+            <div class="carousel carousel-women">
+              <img src="assets/dresscode_girls.PNG" alt="">
+            </div>
+          </div>
+
+          <div class="dresscode-col">
+            <h3 class="dresscode-subtitle">Для мужчин</h3>
+
+            <div class="carousel carousel-men">
+              <img src="assets/dresscode-man.PNG" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Wishes -->
+    <section id="wishes" class="section section-wishes">
+      <div class="container">
+        <h2 class="section-heading script">Пожелания</h2>
+        <div class="wishes-separator"></div>
+
+        <div class="wishes-content">
+          <div class="wishes-icon-wrap">
+            <svg class="wishes-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 12 L24 28 L44 12 L44 40 L4 40 Z"/>
+              <path d="M4 12 L24 28 L44 12" stroke-linecap="round"/>
+              <path d="M20 20 Q24 16 28 20" fill="none"/>
+            </svg>
+          </div>
+
+          <div class="wishes-slider">
+            <div class="wish-slide active">
+              <p class="wish-text">
+                Мы были бы очень благодарны, если бы вы воздержались от криков «Горько!».
+                Ведь поцелуй — это знак выражения чувств, и он не может быть по заказу.
+              </p>
+            </div>
+
+            <div class="wish-slide">
+              <p class="wish-text">
+                Мы будем рады любому знаку внимания, 
+                а если вы размышляете о подарке - конверт станет самым практичным 
+                решением для нас.
+              </p>
+            </div>
+
+            <div class="wish-slide">
+              <p class="wish-text">
+                Нам будет особенно приятно, 
+                если вместо букета вы принесете свое любимое 
+                комнатное растение - оно будут расти вместе с нашей семьёй.
+                А также можно подарить книгу с тёплым 
+                пожеланием внутри - так у нас появится своя 
+                семейная библиотека.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wishes-nav">
+          <button class="wish-nav-btn prev" aria-label="Назад">‹</button>
+          <span class="wish-pagination">1/3</span>
+          <button class="wish-nav-btn next" aria-label="Вперёд">›</button>
+        </div>
+
+        </div>
+    </section>
+    <section id="rsvp" class="section section-rsvp">
+      <div class="container">
+        <h2 class="section-heading">
+          <span class="sans">БУДЕМ РАДЫ ВИДЕТЬ</span>
+          <span class="script script-large">Вас</span>
+        </h2>
+
+        <p class="rsvp-text">Пожалуйста, подтвердите ваше присутствие на нашей свадьбе до:</p>
+        <p class="rsvp-date">25 07 26</p>
+
+        <a
+          href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-confirm"
+          id="rsvpConfirmBtn"
+        >
+          Подтвердить присутствие
+        </a>
+      </div>
+    </section>
+
+    <!-- 10. Contacts -->
+    <section id="contacts" class="section section-contacts">
+      <div class="container">
+        <h2 class="section-heading">
+          <span class="script script-accent">Наши</span>
+          <span class="sans">КОНТАКТЫ</span>
+        </h2>
+
+        <p class="contacts-intro">По всем вопросам, связанным с мероприятием, вы можете связаться с нами:</p>
+
+        <div class="contacts-grid">
+          <div class="contact-item">
+            <p class="contact-name script">Anna</p>
+            <a href="tel:+375295712989" class="contact-phone">📞 +375 (29) 571-29-89</a>
+          </div>
+
+          <div class="contact-item">
+            <p class="contact-name script">Роман</p>
+            <a href="tel:+375447375552" class="contact-phone">📞 +375 (44) 737-55-52</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Goodbye -->
+    <section id="goodbye" class="section section-goodbye">
+      <div class="container">
+        <h2 class="goodbye-title">
+          <span class="goodbye-line1">ДО СКОРОЙ</span>
+          <span class="goodbye-line2">ВСТРЕЧИ!</span>
+        </h2>
+
+        <div class="wavy-divider">
+          <span class="script script-love">With Love</span>
+          <span class="script script-names">Роман & Анна</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
